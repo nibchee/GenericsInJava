@@ -1,7 +1,10 @@
 public class Zoo {
     public static void main(String[] args) {
-        //As here Cage created with Object class due to which able to have 2 different anmals in same cage but wants smae
-        //so generic is used
+        /*
+        As here Cage created with Object class due to which able to have 2 different anmals
+        in same cage but wants smae
+         so generic is used
+         */
         Cage<Monkey> c1 = new Cage<>(new Monkey(), new Monkey());
         Cage<Lion> c2 = new Cage<>(new Lion(), new Lion());
 
@@ -26,6 +29,8 @@ public class Zoo {
         /*
         remedy is just use wildcard character ? in function
          */
+
+
     }
 
     public static void printAnimalInCage(Cage<?> c) {

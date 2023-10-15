@@ -1,2 +1,6 @@
-public class Monkey extends Animal{
+public class Monkey extends Animal implements Eat{
+    @Override
+    public void eat() {
+
+    }
 }
