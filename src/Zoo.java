@@ -39,8 +39,16 @@ public class Zoo {
     This is known as UpperBound Wildcard
      */
 
-    public static void printAnimalInCage(Cage<? extends Animal> c) {
-        System.out.println(c.getClass());
+    public static void printAnimalInCage(Cage<? extends Monkey> c) {
+        System.out.println(c.getA1().getClass()+" "+ c.getA2().getClass());
         // c.setA1(new Monkey());       //Compile Time Error
+    }
+
+    /*
+    Remedy is to use lowerbound Wildcards using super
+     */
+    public static void SetAnimalInCage(Cage<? super Monkey> c) {
+        System.out.println(c.getA1().getClass()+" "+ c.getA2().getClass());
+        c.setA1(new Monkey());       //Compile Time Error
     }
 }
