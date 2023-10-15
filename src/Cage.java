@@ -22,4 +22,13 @@ public class Cage<E extends Animal> {
     public void setA2(E a2) {
         this.a2 = a2;
     }
+
+    /*
+    3.Here is the problem though Animal Monkey eats & we want to feed him
+    but its geerating compile time issues
+    so we want aniamls in Cage if they only Eats otherwise they would be died
+     */
+    public void feedAnimals(){
+        a1.eat();
+    }
 }
