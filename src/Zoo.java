@@ -6,7 +6,7 @@ public class Zoo {
          so generic is used
          */
         Cage<Monkey> c1 = new Cage<>(new Monkey(), new Monkey());
-        Cage<Lion> c2 = new Cage<>(new Lion(), new Lion());
+//        Cage<Lion> c2 = new Cage<>(new Lion(), new Lion());
 
      /*
     1.Now here Cage can accept string type objects as well which is not an animal,
@@ -25,7 +25,7 @@ public class Zoo {
          */
         //Not Possible
         printAnimalInCage(c1);
-        printAnimalInCage(c2);
+       // printAnimalInCage(c2);
         /*
         remedy is just use wildcard character ? in function
          */

@@ -1,4 +1,8 @@
-public class Cage<E extends Animal> {
+
+/*
+So remedy to 3rd Problem is to use & , this is only for those animals which eat
+ */
+public class Cage<E extends Animal & Eat> {
     E a1;
     E a2;
 
