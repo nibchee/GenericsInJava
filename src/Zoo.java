@@ -25,7 +25,7 @@ public class Zoo {
          */
         //Not Possible
         printAnimalInCage(c1);
-       // printAnimalInCage(c2);
+        // printAnimalInCage(c2);
         /*
         remedy is just use wildcard character ? in function
          */
@@ -33,7 +33,14 @@ public class Zoo {
 
     }
 
-    public static void printAnimalInCage(Cage<?> c) {
+    /*
+    Problem 4 now we are able to print the animal in cage & able to get it  but not able to
+    set the animal to different monkey
+    This is known as UpperBound Wildcard
+     */
 
+    public static void printAnimalInCage(Cage<? extends Animal> c) {
+        System.out.println(c.getClass());
+        // c.setA1(new Monkey());       //Compile Time Error
     }
 }
