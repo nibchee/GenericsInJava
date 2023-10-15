@@ -6,7 +6,7 @@ public class Zoo {
         Cage<Lion> c2 = new Cage<>(new Lion(), new Lion());
 
      /*
-    Now here Cage can accept string type objects as well which is not an animal,
+    1.Now here Cage can accept string type objects as well which is not an animal,
     hence this is issue
     */
         // Cage<String> c3 = new Cage<>("monkey", "Cat");
@@ -15,6 +15,17 @@ public class Zoo {
     TO handle above issue we declare Cage class to be more restrictive i.e Cage<E extends Animal>
      Now it would only accepts Animals
      */
+
+        /*
+        2. Now issue is we want to print the Animals so pass the Generic Cage objects in function
+        but function does not accepts Parent class, it works specific to particular Animal only
+         */
+        //Not Possible
+        printAnimalInCage(c1);
+        printAnimalInCage(c2);
+    }
+
+    public static  void printAnimalInCage(Cage<Animal> c){
 
     }
 }
