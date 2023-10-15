@@ -9,6 +9,12 @@ public class Zoo {
     Now here Cage can accept string type objects as well which is not an animal,
     hence this is issue
     */
-        Cage<String> c3 = new Cage<>("monkey", "Cat");
+        // Cage<String> c3 = new Cage<>("monkey", "Cat");
+
+    /*
+    TO handle above issue we declare Cage class to be more restrictive i.e Cage<E extends Animal>
+     Now it would only accepts Animals
+     */
+
     }
 }

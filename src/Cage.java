@@ -1,4 +1,4 @@
-public class Cage<E> {
+public class Cage<E extends Animal> {
     E a1;
     E a2;
 
