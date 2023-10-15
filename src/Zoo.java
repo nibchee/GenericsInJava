@@ -23,9 +23,12 @@ public class Zoo {
         //Not Possible
         printAnimalInCage(c1);
         printAnimalInCage(c2);
+        /*
+        remedy is just use wildcard character ? in function
+         */
     }
 
-    public static  void printAnimalInCage(Cage<Animal> c){
+    public static void printAnimalInCage(Cage<?> c) {
 
     }
 }
